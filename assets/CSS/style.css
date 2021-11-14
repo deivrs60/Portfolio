@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
 }
-
+/* begin header section */
 header {
     padding: 20px 35px;
     background-color:var(--tertiary-color);
@@ -25,10 +25,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../images/sugarskull.jpeg);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    
     z-index: 9999;
     
 }
@@ -41,15 +38,17 @@ header h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header h1 div {
-    background-color: var(--primary-color);
-    border: 10px 10px 10px 50px;
-}
-
 
 header a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+header a:hover {
+    border-bottom: ridge var(--primary-color);
+    border-radius: 10%;
+    text-shadow: none;
+    border-collapse: separate;
 }
 header nav ul {
     display: flex;
@@ -64,7 +63,7 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: var(--tertiary-color);
+    color: var(--primary-color);
    
 }
 
@@ -74,4 +73,66 @@ header nav ul li a:hover {
     border-bottom: ridge var(--primary-color);
     border-radius: 10%;
  
+}
+/* end header section */
+
+/* begin hero section */
+.hero {
+    background-image: url(../images/sugarskull.jpeg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-attachment: fixed;
+    height: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: right;
+    
+}
+
+.cool-subtitle {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.cool-subtitle h2 {
+    font-size: 55px;
+    background: var(--primary-color);
+    border-radius: 15%;
+    position: fixed right;
+}
+
+/* end hero section */
+
+/* begin about me section */
+.bio {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-title {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    border-right: 3px solid;
+    padding-bottom: 20px;
+    width: 15%;
+    text-align: right;
+    margin: 50px auto 0 50px;
+    position: relative;
+    
+}
+
+.bio p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 70%;
+    font-size: 20px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    justify-content: right;
+    display: inline-flex;
 }
