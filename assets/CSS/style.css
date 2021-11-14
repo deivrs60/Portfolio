@@ -1,0 +1,77 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #c694ee;
+    --secondary-color: #f162ff;
+    --tertiary-color: #fffacd;
+    --quaternary-color: #9932cc;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+}
+
+header {
+    padding: 20px 35px;
+    background-color:var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/sugarskull.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    z-index: 9999;
+    
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:var(--tertiary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 div {
+    background-color: var(--primary-color);
+    border: 10px 10px 10px 50px;
+}
+
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--tertiary-color);
+   
+}
+
+header nav ul li a:hover {
+    text-shadow: none;
+    border-collapse: separate;
+    border-bottom: ridge var(--primary-color);
+    border-radius: 10%;
+ 
+}
