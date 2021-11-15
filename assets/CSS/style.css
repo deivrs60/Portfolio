@@ -6,7 +6,7 @@
 :root {
     --primary-color: #c694ee;
     --secondary-color: #f162ff;
-    --tertiary-color: #fffacd;
+    --tertiary-color: #ffffff;
     --quaternary-color: #9932cc;
 }
 
@@ -108,31 +108,118 @@ header nav ul li a:hover {
 /* end hero section */
 
 /* begin about me section */
-.bio {
+#about-me {
+    justify-content: space-between;
     display: inline-flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+}
+.title-container {
+    display: inline-flex;
+    padding-right: 0;
+    width: 10vw;
+    flex: 1 25%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
 }
 .section-title {
     font-size: 48px;
     color: var(--tertiary-color);
-    border-right: 3px solid;
-    padding-bottom: 20px;
-    width: 15%;
+    margin: auto;
+    height: 100%;
+    border-right: 3px solid var(--tertiary-color);
+    padding-right: 20px;
     text-align: right;
-    margin: 50px auto 0 50px;
-    position: relative;
-    
 }
+.bio {
+    width: 60%;
+    flex: 2 75%;
+    margin: 50px auto;
 
-.bio p {
+}
+.bio-text {
     line-height: 1.7;
     color: var(--tertiary-color);
-    width: 70%;
     font-size: 20px;
-    margin: 50px auto 0 auto;
-    text-align: center;
-    justify-content: right;
+    margin:0 auto 50px auto;
+    text-align: left;
+    max-width: 60%;
+    
+}
+/* End about me section */
+
+/* Begin WORK section */
+#work {
+    justify-content: space-between;
     display: inline-flex;
+    flex-wrap: wrap;
+}
+.projects {
+    width: 60%;
+    margin: 50px auto;
+    flex: 2 75%;
+
+}
+
+.run-buddy {
+    height: 35vw;
+    width: 65vw;
+    flex: 2 60%;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.run-buddy a img {
+    max-width: 100%;
+    opacity: 0.75;
+    border: 5px solid var(--tertiary-color);
+}
+
+.run-buddy a img:hover {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+.double-panel {
+    display: inline-flex;
+    flex: wrap;
+    justify-content: space-between;
+    flex: 1 25%;
+}
+.work-square{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: inline-flex;
+    flex: 1 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+
+}
+.work-square img {
+    max-width: 100%;
+    opacity: 0.75;
+    border: 5px solid var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-square img:hover {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+.image-title {
+    text-align: center;
+    background-color: var(--secondary-color);
+    width: 7vw;
+    height:7vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    
 }
